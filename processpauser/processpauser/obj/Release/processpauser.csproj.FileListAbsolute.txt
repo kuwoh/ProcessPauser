@@ -1,0 +1,8 @@
+C:\Users\Nehemiah\Documents\Visual Studio 2012\Projects\processpauser\processpauser\bin\Release\processpauser.exe.config
+C:\Users\Nehemiah\Documents\Visual Studio 2012\Projects\processpauser\processpauser\bin\Release\processpauser.exe
+C:\Users\Nehemiah\Documents\Visual Studio 2012\Projects\processpauser\processpauser\bin\Release\processpauser.pdb
+C:\Users\Nehemiah\Documents\Visual Studio 2012\Projects\processpauser\processpauser\obj\Release\processpauser.Form1.resources
+C:\Users\Nehemiah\Documents\Visual Studio 2012\Projects\processpauser\processpauser\obj\Release\processpauser.Properties.Resources.resources
+C:\Users\Nehemiah\Documents\Visual Studio 2012\Projects\processpauser\processpauser\obj\Release\processpauser.csproj.GenerateResource.Cache
+C:\Users\Nehemiah\Documents\Visual Studio 2012\Projects\processpauser\processpauser\obj\Release\processpauser.exe
+C:\Users\Nehemiah\Documents\Visual Studio 2012\Projects\processpauser\processpauser\obj\Release\processpauser.pdb
