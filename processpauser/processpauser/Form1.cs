@@ -11,6 +11,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Threading;
+using System.Management;
 
 namespace processpauser
 {
@@ -25,27 +26,27 @@ namespace processpauser
         {
             this.Refresh();
         }
-
+        //change window title
         private void monoFlat_TextBox1_TextChanged(object sender, EventArgs e)
         {
             this.Text = monoFlat_TextBox1.Text;
             monoFlat_ThemeContainer1.Text = monoFlat_TextBox1.Text;
         }
-
+        //suspend process state
         private void monoFlat_Button1_Click(object sender, EventArgs e)
         {
             string prcname = monoFlat_TextBox2.Text.ToString();
             Process prctarget = Process.GetProcessesByName(prcname)[0];
             ProcessExtension.Suspend(prctarget);
         }
-
+        //resume process state
         private void monoFlat_Button2_Click(object sender, EventArgs e)
         {
             string prcname = monoFlat_TextBox2.Text.ToString();
             Process prctarget = Process.GetProcessesByName(prcname)[0];
             ProcessExtension.Resume(prctarget);
         }
-
+        //start process and suspend it in chosen ms
         private void monoFlat_Button3_Click(object sender, EventArgs e)
         {
             string path = monoFlat_TextBox3.Text.ToString();
@@ -67,7 +68,7 @@ namespace processpauser
                 process.Kill();
             }
         }
-
+        //shows if process is running or not
         private void monoFlat_Panel1_MouseHover(object sender, EventArgs e)
         {
             this.Refresh();
@@ -81,7 +82,7 @@ namespace processpauser
                 monoFlat_HeaderLabel2.Text = monoFlat_TextBox2.Text + " Process Is Running";
             this.Refresh();
         }
-
+        //shows if process is running or not
         private void monoFlat_ThemeContainer1_MouseHover(object sender, EventArgs e)
         {
             this.Refresh();
@@ -95,5 +96,37 @@ namespace processpauser
                 monoFlat_HeaderLabel2.Text = monoFlat_TextBox2.Text + " Process Is Running";
             this.Refresh();
         }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void Form1_Load_1(object sender, EventArgs e)
+        {
+            List<String> proclists = new List<string>();
+            Process[] procclist = Process.GetProcesses();
+            foreach (Process processlist in procclist)
+            {
+                proclists.Add(processlist.ProcessName);
+                monoFlat_TextBox5.Text = String.Join(Environment.NewLine, proclists);
+            }
+        }
+
+        private void monoFlat_SocialButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void monoFlat_Button5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+

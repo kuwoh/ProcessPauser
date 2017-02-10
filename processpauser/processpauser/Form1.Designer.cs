@@ -46,6 +46,7 @@
             this.monoFlat_Label2 = new MonoFlat.MonoFlat_Label();
             this.monoFlat_TextBox2 = new MonoFlat.MonoFlat_TextBox();
             this.monoFlat_Button3 = new MonoFlat.MonoFlat_Button();
+            this.monoFlat_TextBox5 = new MonoFlat.MonoFlat_TextBox();
             this.monoFlat_ThemeContainer1.SuspendLayout();
             this.monoFlat_Panel1.SuspendLayout();
             this.SuspendLayout();
@@ -53,6 +54,7 @@
             // monoFlat_ThemeContainer1
             // 
             this.monoFlat_ThemeContainer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(41)))), ((int)(((byte)(50)))));
+            this.monoFlat_ThemeContainer1.Controls.Add(this.monoFlat_TextBox5);
             this.monoFlat_ThemeContainer1.Controls.Add(this.monoFlat_Button4);
             this.monoFlat_ThemeContainer1.Controls.Add(this.monoFlat_Label1);
             this.monoFlat_ThemeContainer1.Controls.Add(this.monoFlat_HeaderLabel1);
@@ -68,7 +70,7 @@
             this.monoFlat_ThemeContainer1.Padding = new System.Windows.Forms.Padding(10, 70, 10, 9);
             this.monoFlat_ThemeContainer1.RoundCorners = true;
             this.monoFlat_ThemeContainer1.Sizable = true;
-            this.monoFlat_ThemeContainer1.Size = new System.Drawing.Size(646, 430);
+            this.monoFlat_ThemeContainer1.Size = new System.Drawing.Size(951, 430);
             this.monoFlat_ThemeContainer1.SmartBounds = true;
             this.monoFlat_ThemeContainer1.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultLocation;
             this.monoFlat_ThemeContainer1.TabIndex = 0;
@@ -165,7 +167,7 @@
             this.monoFlat_ControlBox1.EnableHoverHighlight = false;
             this.monoFlat_ControlBox1.EnableMaximizeButton = true;
             this.monoFlat_ControlBox1.EnableMinimizeButton = true;
-            this.monoFlat_ControlBox1.Location = new System.Drawing.Point(534, 15);
+            this.monoFlat_ControlBox1.Location = new System.Drawing.Point(839, 15);
             this.monoFlat_ControlBox1.Name = "monoFlat_ControlBox1";
             this.monoFlat_ControlBox1.Size = new System.Drawing.Size(100, 25);
             this.monoFlat_ControlBox1.TabIndex = 1;
@@ -302,18 +304,37 @@
             this.monoFlat_Button3.TextAlignment = System.Drawing.StringAlignment.Center;
             this.monoFlat_Button3.Click += new System.EventHandler(this.monoFlat_Button3_Click);
             // 
+            // monoFlat_TextBox5
+            // 
+            this.monoFlat_TextBox5.BackColor = System.Drawing.Color.Transparent;
+            this.monoFlat_TextBox5.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.monoFlat_TextBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(183)))), ((int)(((byte)(191)))));
+            this.monoFlat_TextBox5.Image = null;
+            this.monoFlat_TextBox5.Location = new System.Drawing.Point(639, 73);
+            this.monoFlat_TextBox5.MaxLength = 32767;
+            this.monoFlat_TextBox5.Multiline = true;
+            this.monoFlat_TextBox5.Name = "monoFlat_TextBox5";
+            this.monoFlat_TextBox5.ReadOnly = true;
+            this.monoFlat_TextBox5.Size = new System.Drawing.Size(305, 345);
+            this.monoFlat_TextBox5.TabIndex = 1;
+            this.monoFlat_TextBox5.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+            this.monoFlat_TextBox5.UseSystemPasswordChar = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(41)))), ((int)(((byte)(50)))));
-            this.ClientSize = new System.Drawing.Size(646, 430);
+            this.ClientSize = new System.Drawing.Size(951, 430);
             this.Controls.Add(this.monoFlat_ThemeContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Process Suspender";
             this.TransparencyKey = System.Drawing.Color.Fuchsia;
+            this.Load += new System.EventHandler(this.Form1_Load_1);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
             this.monoFlat_ThemeContainer1.ResumeLayout(false);
             this.monoFlat_ThemeContainer1.PerformLayout();
             this.monoFlat_Panel1.ResumeLayout(false);
@@ -341,6 +362,7 @@
         private MonoFlat.MonoFlat_TextBox monoFlat_TextBox2;
         private MonoFlat.MonoFlat_Button monoFlat_Button3;
         private MonoFlat.MonoFlat_Button monoFlat_Button4;
+        private MonoFlat.MonoFlat_TextBox monoFlat_TextBox5;
     }
 }
 
