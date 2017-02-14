@@ -1,0 +1,16 @@
+<project outputDir="C:\Users\Nehemiah\Documents\Visual Studio 2012\Projects\ProcessPauser-master\processpauser\processpauser\bin\Release\Confused" baseDir="C:\Users\Nehemiah\Documents\Visual Studio 2012\Projects\ProcessPauser-master\processpauser\processpauser\bin\Release" xmlns="http://confuser.codeplex.com">
+  <packer id="compressor" />
+  <module path="processpauser.exe">
+    <rule pattern="true" preset="maximum">
+      <protection id="anti ildasm" />
+      <protection id="anti tamper" />
+      <protection id="constants" />
+      <protection id="ctrl flow" />
+      <protection id="anti dump" />
+      <protection id="anti debug" />
+      <protection id="invalid metadata" />
+      <protection id="ref proxy" />
+      <protection id="rename" />
+    </rule>
+  </module>
+</project>

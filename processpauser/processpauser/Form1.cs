@@ -127,6 +127,47 @@ namespace processpauser
         {
 
         }
+
+        private void monoFlat_Label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void monoFlat_SocialButton1_Click_1(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Refresh();
+            monoFlat_TextBox5.Text = String.Empty;
+            List<String> proclists = new List<string>();
+            Process[] procclist = Process.GetProcesses();
+            foreach (Process processlist in procclist)
+            {
+                proclists.Add(processlist.ProcessName);
+                monoFlat_TextBox5.Text = String.Join(Environment.NewLine, proclists);
+            }
+            this.Refresh();
+        }
+
+        private void Form1_DragDrop(object sender, DragEventArgs e)
+        {
+            
+            
+        }
+
+
+        private void Form1_DragEnter(object sender, DragEventArgs e)
+        {
+            
+        }
+
+        private void monoFlat_TextBox3_DragDrop(object sender, DragEventArgs e)
+        {
+
+        }
     }
 }
 
